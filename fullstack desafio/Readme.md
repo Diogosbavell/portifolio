@@ -6,8 +6,8 @@
  Procedimento para deploy on-line                                                 
  --------------------------------                                                   
 
- 1. O conteúdo da pasta Build, localizada em desafio/dist, contém o essêncial para  
- operação do servidor. O conjunto servidor/front-end foi desenvolvido em NodeJs e   
+ 1. O conteúdo da pasta Build (localizada em desafio/dist) contém o essêncial para  
+ operação do servidor. O conjunto servidor/ front-end foi desenvolvido em NodeJs e   
  ReactJs;                                                                           
  2. Para colocar o servidor on-line, deve ser criado um arquivo nomeado .env em     
  desafio/dist. Nele deverá conter dados da porta de conexão e informações para      
@@ -24,7 +24,7 @@
                                                                                     
  3. A pasta public (localizada em desafio/dist) deverá ser movida um nível acima    
  do conteúdo localizado em desafio/dist.                                            
- 4. Deverá ser dado um npm install em /desafio para instalar as depências. A pasta  
+ 4. Deverá ser dado um npm install em ./desafio para instalar as dependências. A pasta  
  node_modules deverá ser modiva para desafio/dist.                                  
  5. A estrutura geral do servidor deverá ser a seguinte:                            
                                                                                     
