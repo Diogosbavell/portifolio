@@ -20,7 +20,7 @@ dotenv_1.default.config();
 const server = (0, express_1.default)();
 //Config server
 server.use((0, cors_1.default)({
-    origin: "/",
+    origin: "*",
     methods: ["POST", "GET", "PUT", "DELETE"]
 }));
 server.use(express_1.default.json());

@@ -20,7 +20,7 @@ const server = express();
 
 //Config server
 server.use(cors({
-    origin: "/",
+    origin: "*",
     methods: ["POST", "GET", "PUT", "DELETE"]
 }));
 server.use(express.json());

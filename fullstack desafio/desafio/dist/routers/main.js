@@ -27,6 +27,7 @@ const express_1 = require("express");
 const mainController = __importStar(require("../controllers/mainController"));
 const router = (0, express_1.Router)();
 router.get("/", mainController.home);
+router.get("/quotes", mainController.home);
 router.get("/readSummary", mainController.readAll);
 router.get("/readDetailed/:id", mainController.readDet);
 exports.default = router;

@@ -16,14 +16,14 @@ exports.readDet = exports.readAll = exports.home = void 0;
 const mySqlModel_1 = require("../models/mySqlModel");
 const path_1 = __importDefault(require("path"));
 const home = (req, res) => {
-    res.sendFile('index.html', path_1.default.resolve(__dirname, "../../public"));
+    res.sendFile('index.html', { root: `${path_1.default.join(__dirname, "../../public/")}` });
 };
 exports.home = home;
 //CRUD
 const readAll = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const dataMy = yield mySqlModel_1.dataMySql.findAll({
         attributes: {
-            exclude: ['travellers', 'contact', 'info']
+            exclude: ['travellers', 'contact', 'info', 'transportation']
         }
     });
     return (res.status(200).json({

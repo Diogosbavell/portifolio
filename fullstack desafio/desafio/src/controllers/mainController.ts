@@ -3,7 +3,7 @@ import { dataMySql } from "../models/mySqlModel";
 import path from "path";
 
 export const home = (req: Request, res: Response) => {
-    res.sendFile('index.html', path.resolve(__dirname, "../../public"));
+   res.sendFile('index.html', {root:`${path.join(__dirname, "../../public/")}`});
 }
 
 //CRUD
