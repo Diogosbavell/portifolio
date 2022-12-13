@@ -36,7 +36,21 @@
   |-->.env                                                                          
   |-->server.js                                                                     
   |-->node_modules                                                                  
- |->public                                                                      
+ |->public     
+
+ 6. O esquema do banco de dados deverá ser o seguinte:
+
+	Nome da Coluna   | Tipo de Dado | Não Null | Auto Incremento | Chave | Extra
+	-----------------------------------------------------------------------------
+	DepartureLocal   | int unsigned |   [v]    |       [v]       |   PRI | auto_increment      
+	DestinationLocal | varchar(100) |   [v]    |       []        |       |
+	DepartureDate    | varchar(100) |   [v]    |       []        |       |    
+	ReturnDate       | varchar(100) |   [v]    |       []        |       |     
+	Travellers       | varchar(100) |   [v]    |       []        |       |     
+	Transportation   | varchar(100) |   [v]    |       []        |       |     
+	Contact          | varchar(100) |   [v]    |       []        |       |     
+	Price            | float        |   [v]    |       []        |       |     
+	Info             | mediumtext   |   []     |       []        |       |     
 
 ------------------------------------------------------------------------------------
  Developed by Diogo Borges                                     
@@ -75,5 +89,19 @@
   |-->.env                                                                            
   |-->server.js                                                                     
   |-->node_modules                                                                  
- |->public                                                                          
+ |->public         
+
+ 6. The database schema must be as follows:
+
+	Column Name      |  Data Type   | Not Null | Auto Increment  |  Key  | Extra
+	-----------------------------------------------------------------------------
+	DepartureLocal   | int unsigned |   [v]    |       [v]       |  PRI  | auto_increment      
+	DestinationLocal | varchar(100) |   [v]    |       []        |       |
+	DepartureDate    | varchar(100) |   [v]    |       []        |       |    
+	ReturnDate       | varchar(100) |   [v]    |       []        |       |     
+	Travellers       | varchar(100) |   [v]    |       []        |       |     
+	Transportation   | varchar(100) |   [v]    |       []        |       |     
+	Contact          | varchar(100) |   [v]    |       []        |       |     
+	Price            | float        |   [v]    |       []        |       |     
+	Info             | mediumtext   |   []     |       []        |       |    
 
